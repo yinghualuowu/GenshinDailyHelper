@@ -1,6 +1,6 @@
 <h1 align="center">
 
-GenshinDailyHelper
+GenshinDailyHelper[暂不可用，等待回来~]
 
 </h1>
 
