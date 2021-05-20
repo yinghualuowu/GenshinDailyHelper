@@ -55,4 +55,7 @@ GenshinDailyHelper
 - 多个账号以```#```隔开，如Cookie1#Cookie2#Cookie3
 
 ## 传送门
-- https://github.com/y1ndan/genshin-impact-helper 以后一般会根据这个大佬的项目来跟进
+- https://github.com/y1ndan/genshinhelper 以后一般会根据这个大佬的项目来跟进
+
+## Star统计
+[![Stargazers over time](https://starchart.cc/yinghualuowu/GenshinDailyHelper.svg)](https://starchart.cc/yinghualuowu/GenshinDailyHelper)
