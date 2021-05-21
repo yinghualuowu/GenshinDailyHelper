@@ -4,16 +4,16 @@ GenshinDailyHelper
 
 </h1>
 
-**原神的签到福利是需要单独下载APP进行才可以领取，并且每天需要打卡，虽然奖励并不是很可观，但有一些摩拉，食材和可观的经验书累计起来还是挺有吸引力的。可能本身不怎么刷论坛的玩家往往会忽略这些奖励。利用Github的Action实现了自动签到功能**
+**利用Github的Action最近比较严格，暂不提供执行脚本，该项目会直接采用云函数或docker方式部署**
+
+**原神的签到福利是需要单独下载APP进行才可以领取，并且每天需要打卡，虽然奖励并不是很可观，但有一些摩拉，食材和可观的经验书累计起来还是挺有吸引力的。可能本身不怎么刷论坛的玩家往往会忽略这些奖励。**
 
 自动签到步骤为
 * **获取账号信息（区域和UID）**
 * **判断是否已经完成签到**
 * **未进行签到到执行签到动作**
-* **上述任何步骤出现异常都将判定为失败，并通过Github邮件提醒**
 
-运行结果
-![运行图示](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/buildsuccess.png)
+重要提示
 
 **该项目支持多号签到/多角色签到，但各位旅行者爱惜羊角包，不要滥用**
 
@@ -31,28 +31,6 @@ GenshinDailyHelper
 ### 1.2 第二步，Fork仓库
 - 项目地址 ：https://github.com/yinghualuowu/GenshinDailyHelper
 - 点击右上角的Fork按钮
-
-### 1.3 第三步, 添加Cookie到Secrets
-- 在自己的项目界面，点击 ```Settings-->Secrets-->New secret```
-![Secrets所在位置](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/setting.png)
-- 创建```Cookie```，把第一步保存的```cookie```信息复制到```Value```中
-
-### 1.4 启动Action
-- Fork的项目是不会自动运行Action的，需要手动执行一次。
-- 点击```Action``` -> ```图1.4.1``` -> ```图1.4.2``` -> ```Run workflow```
-![图1.4.1](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/understandflow.png)
-![图1.4.2](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/enableflow.png)
-![图1.4.3](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/runflow.png)
-
-### 1.5 运行结果
-- 运行结果可以点击每一次的执行 -> ```build``` -> ```Run```
-![运行结果](https://cdn.jsdelivr.net/gh/yinghualuowu/SakuraWallpaper@74c46f44/cnblog/head/genshin/buildflow.png)
-
-### 其他
-- 点击 ```Run workflow```可以手动触发Action
-- 自动签到时间是 6点
-- 若Cookie失效在第三步替换自己的Cookie。一般情况下Cookie能保持有效期很久。
-- 多个账号以```#```隔开，如Cookie1#Cookie2#Cookie3
 
 ## 传送门
 - https://github.com/y1ndan/genshinhelper 以后一般会根据这个大佬的项目来跟进
